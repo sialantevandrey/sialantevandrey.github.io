@@ -1,0 +1,116 @@
+.pay {
+    height: 100vh;
+    min-height: 920px;
+    padding: 270px 0 330px;
+    box-sizing: border-box;
+    @include media('max', 'sm') {
+        min-height: 600px;
+        padding: 230px 0 60px;
+    }
+}
+.pay_true {
+    background: url('../images/bg/pay-true-bg.jpg') center bottom no-repeat;
+    background-size: cover;
+    @include media('max', 'sm') {
+        background: url('../images/bg/pay-true-mob-bg.jpg') center bottom no-repeat;
+        background-size: cover;
+    }
+}
+.pay_false {
+    background: url('../images/bg/pay-false-bg.jpg') center bottom no-repeat;
+    background-size: cover;
+    @include media('max', 'sm') {
+        background: url('../images/bg/pay-false-mob-bg.jpg') center bottom no-repeat;
+        background-size: cover;
+    }
+}
+.pay-status {
+    width: 226px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #CAFA69;
+    box-shadow: 0px 38px 100px rgba(202, 250, 105, 0.3);
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    color: #384614;
+    margin: 0 auto;
+    img {
+        display: block;
+        margin-right: 10px;
+    }
+    @include media('max', 'sm') {
+        width: 122px;
+        height: 43px;
+        font-size: 10px;
+        img {
+            width: 18px;
+            margin-right: 5px;
+        }
+    }
+}
+.pay-status_false {
+    background: #EB5D5D;
+    box-shadow: 0px 38px 100px rgba(165, 64, 64, 0.5);
+    color: #fff;
+}
+.pay-title {
+    margin-top: 15px;
+    text-align: center;
+    h1 {
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 120%;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+        color: #EAEAEA;
+        margin-bottom: 8px;
+    }
+    p {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+        letter-spacing: -0.04em;
+        color: #707070;
+        margin-top: 8px;
+    }
+    @include media('max', 'sm') {
+        h1 {
+            font-size: 43px;
+        }
+        p {
+            font-size: 13px;
+        }
+    }
+}
+.pay-link {
+    width: 281px;
+    height: 81px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $main-color;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: #EAEAEA;
+    box-sizing: border-box;
+    margin: 45px auto 0;
+    transition: .4s;
+    &:hover {
+        color: #fff;
+        background-color: $main-color;
+    }
+    @include media('max', 'sm') {
+        width: 187px;
+        height: 53px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,206 @@
+.communicate {
+    padding-top: 105px;
+    position: relative;
+    @include media('max', 'sm') {
+        padding-top: 75px;
+        .page-title {
+            font-size: 44px;
+        }
+    }
+}
+.communicate-wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 100px;
+    @include media('max', 'xl') {
+        padding-top: 545px;
+        width: fit-content;
+        display: block;
+        margin: 100px auto 0;
+    }
+    @include media('max', 'sm') {
+        padding-top: 0;
+        margin-top: 35px;
+    }
+}
+.communicate-frame {
+    width: 300px;
+    @include media('max', 'sm') {
+        width: 100%;
+        margin-top: 35px;
+    }
+}
+.clubs-item_sub-gradient {
+    width: 100%;
+    background: #fff;
+    &::before {
+        background: linear-gradient(-91.18deg, #4D74FF 8.47%, #B04DFF 71.86%);
+    }
+}
+.communicate-clubs {
+    
+    @include media('max', 'sm') {
+        width: 200px;
+        
+        transform: rotate(-1deg);
+        .clubs-item {
+            width: 200px;
+            padding: 15px 20px;
+        }
+        .clubs-item__link {
+            height: 30px;
+            margin-top: 8px;
+        }
+    }
+}
+.communicate-descripter {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 15px;
+    p {
+        font-size: 17px;
+        line-height: 130%;
+        letter-spacing: -0.04em;
+        color: #727272;
+    }
+    &::before {
+        content: '';
+        width: 27px;
+        height: 1px;
+        margin-right: 10px;
+        background: #1184FB;
+        flex-shrink: 0;
+        margin-top: 10px;
+    }
+    @include media('max', 'sm') {
+        margin-top: 10px;
+        p {
+            font-size: 11px;
+        }
+        &::before {
+            width: 18px;
+            margin-right: 10px;
+            margin-top: 6px;
+        }
+    }
+}
+.communicate-messenger {
+    margin-top: 75px;
+    @include media('max', 'sm') {
+        width: 200px;
+        transform: rotate(-1deg);
+        margin-top: 15px;
+    }
+}
+.communicate-messenger__photo {
+    padding: 9px 8px 15px;
+    background: linear-gradient(0deg, #0A141F, #0A141F), #FFFFFF;
+    box-shadow: 0px 4.77778px 238.889px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10.75px);
+    border-radius: 25px;
+    img {
+        width: 100%;
+        display: block;
+        border-radius: inherit;
+    }
+}
+.communicate-sms {
+    margin-top: 110px;
+    @include media('max', 'xl') {
+        margin-top: 75px;
+    }
+    @include media('max', 'sm') {
+        width: 200px;
+        margin-top: 18px;
+        transform: rotate(1deg);
+        margin-left: auto;
+    }
+}
+.communicate-sms__list {
+    padding: 17px 12px 17px 12px;
+    background: linear-gradient(115.12deg, rgba(255, 255, 255, 0) 15.88%, rgba(255, 255, 255, 0.2) 39.56%, rgba(255, 255, 255, 0) 65.3%), #FFFFFF;
+    box-shadow: 0px 4.77778px 238.889px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10.75px);
+    border-radius: 22px;
+    img {
+        width: 100%;
+        display: block;
+        box-shadow: 0px 22px 30px -6px rgba(0, 0, 0, 0.4);
+        border-radius: 9.71518px;
+        margin-bottom: 9px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.communicate-descripter_revers {
+    flex-direction: row-reverse;
+    text-align: right;
+    &::before {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+}
+.communicate-phone {
+    position: absolute;
+    top: 54px;
+    left: 330px;
+    @include media('max', 'xl') {
+        transform: scale(0.7);
+        left: -280px;
+        top: -110px;
+    }
+    @include media('max', 'sm') {
+        transform: scale(1);
+        left: auto;
+        top: auto;
+        position: relative;
+    }
+}
+.communicate-phone-bg {
+    width: 837px;
+    display: block;
+    @include media('max', 'sm') {
+        width: 100%;
+    }
+}
+.communicate-phone__photo {
+    width: 405px;
+    position: absolute;
+    top: 40px;
+    left: 48px;
+}
+.communicate-phone__info {
+    width: 335px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    color: rgba(14, 72, 45, 0.9);
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    @include media('max', 'sm') {
+        width: 212px;
+        font-size: 19px;
+        color: #0E482D;
+        top: 20px;
+        right: 20px;
+        bottom: auto;
+    }
+}
+.communicate-json-pc {
+    width: 1500px;
+    display: block;
+}
+.communicate-json {
+    width: 161%;
+    mix-blend-mode: lighten;
+    margin-left: -30%;
+    margin-top: -100px;
+}
+// video::-webkit-media-controls {
+//     display: none;
+//   }

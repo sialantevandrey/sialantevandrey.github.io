@@ -1,0 +1,157 @@
+.best {
+    padding-top: 170px;
+    @include media('max', 'xl') {
+        padding-top: 70px;
+    }
+}
+.best-line {
+    width: 100%;
+    display: block;
+}
+.best-line_top {
+    margin-bottom: 80px;
+    @include media('max', 'xl') {
+        margin-bottom: 25px;
+    }
+}
+.best-line_bottom {
+    margin-top: 45px;
+    @include media('max', 'sm') {
+        display: none;
+    }
+}
+.best-title {
+    p {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+        letter-spacing: -0.04em;
+        color: #86868B;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-weight: 700;
+        font-size: 49px;
+        line-height: 130%;
+        display: inline-block;
+        letter-spacing: -0.04em;
+        color: #EAEAEA;
+    }
+    @include media('max', 'sm') {
+        text-align: center;
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 34px;
+        }
+    }
+}
+.gray-color {
+    color: #86868B;
+}
+.best-dots {
+    width: 140px;
+    display: block;
+    margin-top: 150px;
+    @include media('max', 'sm') {
+        width: 103px;
+        margin: 30px auto 0;
+    }
+}
+.best-btn {
+    margin-top: 200px;
+    p {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: -0.04em;
+        color: #EAEAEA;
+        span {
+            color: #86868B;
+        }
+    }
+    a {
+        @include button(275px, 80px);
+        margin-top: 45px;
+    }
+    @include media('max', 'sm') {
+        margin: 20px auto 0;
+        p {
+            font-size: 18px;
+            text-align: center;
+        }
+        a {
+            width: 203px;
+            height: 60px;
+            margin: 25px auto 0;
+        }
+    }
+}
+.best-phone {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    @include media('max', 'xl') {
+        top: 320px;
+    }
+    @include media('max', 'sm') {
+        width: 290px;
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 70px auto 0;
+    }
+}
+.best-phone__bg {
+    width: 945px;
+    display: block;
+    @include media('max', 'xl') {
+        width: 600px;
+    }
+    @include media('max', 'sm') {
+        width: 100%;
+    }
+}
+.best-phone-wrap {
+    width: 405px;
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 55px;
+    @include media('max', 'xl') {
+        width: 255px;
+        right: 28px;
+    }
+    @include media('max', 'sm') {
+        width: 210px;
+        top: 22px;
+    }
+}
+.best-json {
+    width: 368px;
+    height: 790px;
+    border-radius: 50px;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: 17px;
+    top: 13px;
+    @include media('max', 'xl') {
+        width: 250px;
+        height: 490px;
+        border-radius: 30px;
+        left: 4px;
+    }
+    @include media('max', 'sm') {
+        width: 209px;
+        height: 406px;
+        left: 1px;
+        top: 9px;
+    }
+}
+.best-phone__photo {
+    width: 100%;
+    display: block;
+}

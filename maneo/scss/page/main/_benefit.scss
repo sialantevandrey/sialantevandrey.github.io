@@ -1,0 +1,121 @@
+.benefit {
+    padding: 170px 0;
+    @include media('max', 'xl') {
+        padding: 100px 0 130px;
+    }
+}
+.benefit-frame {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    @include media('max', 'sm') {
+        display: block;
+    }
+}
+.benefit-title {
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    color: #EAEAEA;
+    span {
+        color: #86868B;
+    }
+    @include media('max', 'xl') {
+        font-size: 36px;
+    }
+    @include media('max', 'sm') {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+.benefit-wrap {
+    width: 590px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include media('max', 'sm') {
+        width: 100%;
+        display: block;
+    }
+}
+.benefit-list {
+    width: calc(50% - 8px);
+    @include media('max', 'sm') {
+        width: 100%;
+    }
+}
+.benefit-item {
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    background: radial-gradient(50% 50% at 50% 50%, #121212 0%, #1C1C1C 100%);
+    border-radius: 13px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    position: relative;
+    b {
+        display: block;
+        font-size: 24px;
+        line-height: 130%;
+        letter-spacing: -0.04em;
+        color: #EAEAEA;
+        margin-top: auto;
+        span {
+            color: #86868B;
+        }
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @include media('max', 'sm') {
+        min-height: 178px;
+    }
+}
+.benefit-item_325 {
+    min-height: 328px;
+    @include media('max', 'sm') {
+        min-height: 178px;
+    }
+}
+.benefit-item_231 {
+    min-height: 231px;
+    @include media('max', 'sm') {
+        min-height: 178px;
+    }
+}
+.benefit-item_257 {
+    min-height: 257px;
+    @include media('max', 'sm') {
+        min-height: 178px;
+    }
+}
+.benefit-item__icon {
+    width: 32px;
+    display: block;
+    margin-bottom: 30px;
+}
+.benefit-item_sub-gradient {
+    background: linear-gradient(91.18deg, #4D74FF 8.47%, #B04DFF 71.86%);
+}
+.benefit-item_single {
+    width: 100%;
+    min-height: 231px;
+    margin-top: 16px;
+    @include media('max', 'sm') {
+        min-height: 275px;
+        margin-top: 20px;
+    }
+}
+.benefit-photo {
+    width: 303px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 65px;
+    @include media('max', 'sm') {
+        width: 250px;
+        bottom: 65px;
+        right: 30px;
+    }
+}

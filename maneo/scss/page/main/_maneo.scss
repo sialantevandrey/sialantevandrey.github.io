@@ -1,0 +1,85 @@
+.maneo {
+    padding: 290px 0 400px;
+    position: relative;
+    box-sizing: border-box;
+    @include media('max', 'xl') {
+        padding: 250px 0 190px;
+    }
+    @include media('max', 'sm') {
+        padding: 170px 0 195px;
+    }
+}
+.maneo-title {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: #EAEAEA;
+    @include media('max', 'xl') {
+        font-size: 56px;
+    }
+    @include media('max', 'sm') {
+        font-size: 39px;
+    }
+}
+.maneo-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    img {
+        display: block;
+        flex-shrink: 0;
+        margin-right: 10px;
+    }
+    p {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.04em;
+        color: #86868B;
+    }
+}
+.maneo-btn {
+    @include button(280px, 80px);
+    margin: 30px auto 0;
+    @include media('max', 'xl') {
+        width: 203px;
+        height: 58px;
+    }
+} 
+.maneo-btn_copy {
+    background: linear-gradient(91.18deg, #4DFFAA 8.47%, #FFF84D 71.86%);
+    color: #364A1C;
+    &::after {
+        background: #177CFF;
+    }
+    &:hover {
+        color: #fff;
+    }
+}
+.page-circle {
+    width: 100%;
+    min-height: 100%;
+    display: block;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+.maneo-circle {
+    object-position: center bottom;
+    @include media('max', 'sm') {
+        height: 100%;
+    }
+}
+.maneo-json-pc {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

@@ -1,0 +1,73 @@
+.invitations {
+    padding-top: 140px;
+    @include media('max', 'xl') {
+        padding-top: 70px;
+    }
+}
+.invitations-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    @include media('max', 'xl') {
+        display: block;
+    }
+}
+.invitations-title {
+    max-width: 585px;
+    font-weight: 700;
+    font-size: 49px;
+    display: inline-block;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    color: #EAEAEA;
+    @include media('max', 'xl') {
+        max-width: 100%;
+    }
+    @include media('max', 'sm') {
+        font-size: 25px;
+        padding-left: 15px;
+    }
+}
+.invitations-work {
+    width: 280px;
+    padding: 10px 20px 20px;
+    box-sizing: border-box;
+    border: 2px solid #353535;
+    border-radius: 15px;
+    box-sizing: border-box;
+    img {
+        display: block;
+        margin-left: auto;
+        transform: rotate(135deg);
+    }
+    p {
+        font-weight: 500;
+        line-height: 140%;
+        letter-spacing: -0.04em;
+        color: #86868B;
+        margin-top: 80px;
+    }
+    @include media('max', 'xl') {
+        margin: 25px auto 0;
+        p {
+            margin-top: 40px;
+        }
+    }
+    @include media('max', 'sm') {
+        width: 252px;
+        padding: 10px 12px;
+        border-radius: 9px;
+        p {
+            font-size: 11px;
+            margin-top: -10px;
+        }
+    }
+}
+.invitations-photo {
+    width: 100%;
+    display: block;
+    margin-top: 30px;
+    @include media('max', 'sm') {
+        margin-top: 20px;
+    }
+}

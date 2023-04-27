@@ -1,0 +1,290 @@
+@import 'fonts';
+@import 'normaliz';
+
+// Главные цвета сайта
+
+$main-color: #177CFF;
+$sub-color: #0066cc;
+
+// Цвет текста
+$title-color: #081F51;
+$text-color: #616161;
+
+// Цвет кнопок
+
+$button-color: #fff;
+$button-bg: $main-color;
+
+// Размер контентной части
+
+$frame: 1200px;
+
+@import 'snippets/main-snippets';
+
+%page-frame {
+	padding: 100px 0;
+	@include media("max", "md") {
+		padding: 70px 0;
+	}
+	@include media("max", "sm") {
+		padding: 50px 0;
+	}
+}
+* {
+	&::selection {
+		color: #fff; /* Цвет текста */
+    	background: $main-color; /* Цвет фона */
+	}
+}
+html, body {
+	overflow-x: hidden;
+	position: relative;
+	min-height: 100vh; 
+}
+body {
+	width: 100%;
+	min-width: 320px;
+	display: flex;
+	flex-direction: column;
+	background-color: #000;
+	color: $text-color;
+	font: normal 18px/1.5 $main-font;
+	overflow: hidden;
+}
+main {
+	margin-bottom: auto;
+}
+h1,h2,h3,h4,h5,h6, p, ul, ol, a {
+	text-underline-offset: 1px;
+}
+h1,h2,h3,h4,h5,h6, p {
+	margin: 0;
+	font-size: inherit;
+	line-height: inherit;
+	font-weight: inherit;
+	
+}
+h1,h2,h3,h4,h5,h6 { 
+	color: $title-color;
+	font-family: $title;
+}
+ul, ol { 
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	outline: none;
+	color: inherit;
+	&::selection {
+		color: inherit; /* Цвет текста */
+    	background: transparent; /* Цвет фона */
+	}
+	* {
+		&::selection {
+			color: inherit; /* Цвет текста */
+			background: transparent; /* Цвет фона */
+		}
+	}
+}
+form {
+	box-sizing: border-box;
+}
+input {
+	outline: none;
+	box-sizing: border-box;
+}
+input[type="submit"] {
+	cursor: pointer;
+}
+textarea {
+	box-sizing: border-box;
+	outline: none;
+}
+input, textarea {
+	transition: .4s;
+	&:focus {
+		border-color: $main-color !important;
+	}
+}
+select {
+	transition: .4s;
+	&:hover {
+		border-color: $main-color !important; 
+	}
+}
+select, option {
+	outline: none;
+	cursor: pointer;
+	appearance: none;
+}
+select::-ms-expand { 
+    display: none;
+}
+img {
+	&::selection {
+		color: inherit; /* Цвет текста */
+    	background: transparent; /* Цвет фона */
+	}
+}
+label {
+	cursor: pointer;
+	margin-bottom: 0;
+}
+.slick-slide {
+	outline: none !important;
+}
+.section-frame { 
+	max-width: $frame;
+	width: 100%; 
+	margin: 0 auto;
+	box-sizing: border-box;
+	@include media("max", "xl") {
+		max-width: 700px;
+	}
+	@include media("max", "sm") {
+		max-width: 320px;
+	}
+} 
+.section-frame_relative {
+    position: relative;
+}
+
+.load * {  
+  transition: none !important;
+}
+.open-frame	{
+	overflow: hidden;
+} 
+.js-checkbox {
+	cursor: pointer;
+	input {
+		display: none;
+	}
+} 
+.table-hide {
+	@include media('max', 'xl') {
+		display: none !important;
+	}	
+}
+.table-show {
+	display: none !important;
+	@include media('max', 'xl') {
+		display: block !important;
+	}	
+}
+.table-show-flex {
+	display: none !important;
+	@include media('max', 'xl') {
+		display: flex !important;
+	}	
+}
+.table-show-grid {
+	display: none !important;
+	@include media('max', 'xl') {
+		display: grid !important;
+	}	
+}
+.mob-hide {
+	@include media('max', 'sm') {
+		display: none !important;
+	}	
+}
+.mob-show {
+	display: none !important;
+	@include media('max', 'sm') {
+		display: block !important;
+	}	
+}
+.mob-show-inline {
+	display: none !important;
+	@include media('max', 'sm') {
+		display: inline !important;
+	}
+}
+.mob-show-flex {
+	display: none !important;
+	@include media('max', 'sm') {
+		display: flex !important;
+	}	
+}
+.mob-show-grid {
+	display: none !important;
+	@include media('max', 'sm') {
+		display: grid !important;
+	}	
+}
+
+.page-title {
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 130%;
+	text-align: center;
+	letter-spacing: -0.04em;
+	color: #EAEAEA;
+	span {
+		color: #86868B;
+	}
+	@include media('max', 'xl') {
+		font-size: 46px;
+	}
+	@include media('max', 'sm') {
+		font-size: 30px;
+	}
+}
+.page-title_center {
+	text-align: center;
+}
+.page-title_white {
+	color: #fff;
+}
+.page-subtitle {
+	margin-top: 30px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 130%;
+	letter-spacing: -0.04em;
+	color: #EAEAEA;
+	span {
+		color: #86868B;
+	}
+	@include media('max', 'xl') {
+		font-size: 26px;
+	}
+	@include media('max', 'sm') {
+		font-size: 19px;
+		margin-top: 10px;
+		br {
+			display: none;
+		}
+	}
+}
+.main-gradient {
+	$g: 91.18deg, #4DFFAA 8.47%, #FFF84D 71.86%;
+	-webkit-box-decoration-break: clone;
+	@include gradient-text($g);
+	text-shadow: 0px 0px #00000000;
+	// @include media('max', 'sm') {
+	// 	display: inline-block;
+	// }
+}
+.sub-gradient {
+	$g: 91.18deg, #4D74FF 8.47%, #B04DFF 71.86%;
+	-webkit-box-decoration-break: clone;
+	@include gradient-text($g);
+	text-shadow: 0px 0px #00000000;
+	// @include media('max', 'sm') {
+	// 	display: inline-block;
+	// }
+}
+.white-color {
+	color: #fff !important;
+	-webkit-text-fill-color: #fff;
+}
+@import 'header';
+@import 'footer';
+@import 'page/main/index';
+@import 'page/pay/index';
+@import 'page/politics/index';
+@import 'popup';

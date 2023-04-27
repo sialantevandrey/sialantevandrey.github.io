@@ -1,0 +1,77 @@
+.every {
+    padding: 150px 0 200px;
+    margin-top: 120px;
+    @include media('max', 'xl') {
+        padding: 75px 0 90px;
+        margin-top: 0;
+    }
+}
+.every-wrap {
+    display: flex;
+    align-items: flex-end;
+    padding: 45px 45px 35px;
+    background: url('../images/bg/every-bg.png') top right no-repeat, $main-color;
+    position: relative;
+    border-radius: 21px;
+    @include media('max', 'xl') {
+        display: block;
+        background: $main-color;
+    }
+    @include media('max', 'sm') {
+        padding: 30px 23px;
+        background: url('../images/bg/every-bg-mob.png') bottom right no-repeat, $main-color;
+        background-size: 100% auto;
+    }
+}
+.every-content {
+    max-width: 460px;
+}
+.every-title {
+    h2 {
+        max-width: 355px;
+        font-weight: 700;
+        font-size: 40.4px;
+        line-height: 130%;
+        letter-spacing: -0.04em;
+        color: #EAEAEA;
+    }
+    p {
+        font-size: 24px;
+        line-height: 130%;
+        letter-spacing: -0.04em;
+        color: #FFFFFF;
+        margin-top: 20px;
+    }
+    @include media('max', 'sm') {
+        h2 {
+            max-width: 250px;
+            font-size: 28px;
+        }
+        p {
+            font-size: 17px;
+            margin-top: 15px;
+        }
+    }
+}
+.every-link {
+    @include button-white(283px, 80px);
+    margin-top: 50px;
+    @include media('max', 'sm') {
+        width: 200px;
+        height: 57px;
+        margin-top: 25px;
+    }
+}
+.every-phone {
+    width: 337px;
+    display: block;
+    margin-left: 185px;
+    margin-bottom: -35px;
+    @include media('max', 'xl') {
+        margin: 45px auto -35px;
+    }
+    @include media('max', 'sm') {
+        width: 227px;
+        margin-bottom: -30px;
+    }
+}

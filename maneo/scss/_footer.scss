@@ -1,0 +1,124 @@
+.footer {
+    padding: 65px 0;
+    @include media('max', 'sm') {
+        padding: 30px 0 25px;
+    }
+}
+.footer-frame {
+    display: flex;
+    align-items: flex-start;
+    @include media('max', 'xl') {
+        display: block;
+        text-align: center;
+    }
+}
+.footer-requisites {
+    max-width: 265px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    color: #86868B;
+    @include media('max', 'xl') {
+        max-width: 100%;
+    }
+    @include media('max', 'sm') {
+        font-size: 14px;
+    }
+}
+.footer-link {
+    margin-left: 65px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 118.5%;
+    letter-spacing: -0.04em;
+    color: #86868B;
+    li {
+        margin-bottom: 4px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    a {
+        text-decoration-line: underline;
+        transition: .3s;
+        &:hover {
+            color: #fff;
+        }
+    }
+    @include media('max', 'xl') {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    @include media('max', 'sm') {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+}
+.footer-pay {
+    margin-left: auto;
+    p {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 130%;
+        letter-spacing: -0.04em;
+        color: #86868B;
+        margin-bottom: 10px;
+    }
+    @include media('max', 'xl') {
+        margin-top: 30px;
+    }
+    @include media('max', 'sm') {
+        margin-top: 25px;
+        p {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+    }
+}
+.footer-pay__list {
+    display: flex;
+    grid-gap: 10px;
+    img {
+        display: block;
+        &:nth-child(1) {
+            width: 118px;
+        }
+        &:nth-child(2) {
+            width: 106px;
+        }
+        &:nth-child(3) {
+            width: 90px;
+        }
+    }
+    @include media('max', 'xl') {
+        width: 100%;
+        justify-content: center;
+    }
+    @include media('max', 'sm') {
+        img {
+            &:nth-child(1) {
+                width: 80px;
+            }
+            &:nth-child(2) {
+                width: 71px;
+            }
+            &:nth-child(3) {
+                width: 60px;
+            }
+        }
+    }
+}
+.footer-copy {
+    max-width: 910px;
+    text-align: center;
+    margin: 25px auto 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -0.04em;
+    color: #86868B;
+    @include media('max', 'sm') {
+        font-size: 13px;
+    }
+}
