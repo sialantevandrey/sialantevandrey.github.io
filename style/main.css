@@ -1845,7 +1845,9 @@ label {
       width: 209px;
       height: 406px;
       left: 1px;
-      top: 9px; } }
+      top: 9px; 
+    -webkit-border-radius: 52px;
+              border-radius: 52px;} }
 
 .best-phone__photo {
   width: 100%;
