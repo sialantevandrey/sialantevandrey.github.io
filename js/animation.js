@@ -22,11 +22,21 @@ animation(0.5, '.what-item__title', 900, '60px', 'bottom', 0.95, 200, 300);
 
 animation(0.5, '.page-title', 900, '60px', 'bottom', 0.95);
 animation(0.5, '.page-subtitle, .what-clue', 900, '60px', 'bottom', 0.95, 0, 400);
-animation(0.5, '.learn-wrap', 900, '100px', 'bottom', 0.95);
+if($(window).width() > 1200) {
+    animation(0.5, '.learn-wrap', 900, '100px', 'bottom', 0.95);
+} else {
+    animation(0.1, '.learn-wrap', 900, '100px', 'bottom', 0.95);
+}
+
 animation(0.5, '.learn-content__title', 900, '50px', 'bottom', 0.95, 0, 300);
 animation(0.5, '.learn-link', 900, '50px', 'bottom', 0.95, 0, 300);
 
-animation(0.5, '.clubs-wrap', 900, '100px', 'bottom', 0.85);
+
+if($(window).width() > 1200) {
+    animation(0.5, '.clubs-wrap', 900, '100px', 'bottom', 0.85);
+} else {
+    animation(0.1, '.clubs-wrap', 900, '100px', 'bottom', 0.85);
+}
 animation(0.5, '.clubs-grid .clubs-item', 900, '0px', 'bottom', 0.75, 200, 300);
 animation(0.5, '.clubs-grid .clubs-item__title', 900, '40px', 'bottom', 0.85, 200, 800);
 animation(0.5, '.clubs-grid .clubs-item__link', 900, '40px', 'bottom', 0.85, 200, 900);

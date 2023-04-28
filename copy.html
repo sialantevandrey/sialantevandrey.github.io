@@ -655,13 +655,19 @@
 				<img src="/images/icon/close.svg" class="popup-close" alt="">
 				<div class="popup-title">
 					<h3>Напиши свою <br> почту</h3>
-					<p>После оплаты вы&nbsp;<span>попадете на&nbsp;страницу регистрации и&nbsp;загрузки</span> приложения</p>
+					<p>После оплаты вы&nbsp;<span>попадете на&nbsp;страницу регистрации и&nbsp;загрузки</span>
+						приложения</p>
 				</div>
 				<label class="popup-label">
 					<p>Введите электронную почту</p>
-					<input type="email" name="email"  class="email-valid" placeholder="maneo_support@gmail.com">
+					<input type="email" name="email" class="email-valid" placeholder="maneo_support@gmail.com">
 				</label>
-				<p class="email-error">Неверный формат</p>
+				<p class="form-error email-error">Неверный формат</p>
+				<label class="popup-label">
+					<p>Введите номер телефона</p>
+					<input type="tel" inputmode="tel" name="phone" class="phone-valid input-mask" placeholder="+7 (999) 999-99-99">
+				</label>
+				<p class="form-error phone-error">Не заполнен телефон</p>
 				<label class="popup-default-sub inactive">
 					<span>Оформить подписку</span>
 					<img src="/images/icon/arrow.svg" alt="">
@@ -671,28 +677,44 @@
 					<div class="popup-copy__check">
 						<input type="checkbox" name="checkCard">
 					</div>
-					<p class="popup-copy">Согласен с&nbsp;условиями <a href="/politics.html" target="_blank">политики конфиденциальности</a>, <a href="/contract-offer.html" target="_blank">пользовательским соглашением (офертой)</a> и <a href="/podpiska.html" target="_blank">соглашением с подпиской</a></p>
+					<p class="popup-copy">Согласен с&nbsp;условиями <a href="/politics.html" target="_blank">политики
+							конфиденциальности</a>, <a href="/contract-offer.html" target="_blank">пользовательским
+							соглашением (офертой)</a> и <a href="/podpiska.html" target="_blank">соглашением с
+							подпиской</a></p>
 				</div>
-				
 			</form>
 			<form action="#" method="post" class="popup popup-subscription target-box submit-form" data-popup="subscription-plan" data-type="installment_plan">
 				<input type="hidden" name="subject" value="">
 				<img src="/images/icon/close.svg" class="popup-close" alt="">
 				<div class="popup-title">
 					<h3>Напиши свою <br> почту</h3>
-					<p>После оплаты вы&nbsp;<span>попадете на&nbsp;страницу регистрации и&nbsp;загрузки</span> приложения</p>
+					<p>После оплаты вы&nbsp;<span>попадете на&nbsp;страницу регистрации и&nbsp;загрузки</span>
+						приложения</p>
 				</div>
 				<label class="popup-label">
 					<p>Введите электронную почту</p>
 					<input type="email" name="email" class="email-valid" placeholder="maneo_support@gmail.com">
 				</label>
-				<p class="email-error">Неверный формат</p>
-				<label class="popup-default-sub">
+				<p class="form-error email-error">Неверный формат</p>
+				<label class="popup-label">
+					<p>Введите номер телефона</p>
+					<input type="tel" inputmode="tel" name="phone" class="phone-valid input-mask" placeholder="+7 (999) 999-99-99">
+				</label>
+				<p class="form-error phone-error">Не заполнен телефон</p>
+				<label class="popup-default-sub inactive">
 					<span>Оформить подписку <br> в&nbsp;рассрочку. Плати через месяц</span>
 					<img src="/images/icon/arrow.svg" alt="">
 					<input type="submit" formnovalidate>
 				</label>
-				<p class="popup-copy">Нажимая на&nbsp;кнопку, вы&nbsp;даете согласие на&nbsp;<a href="/politics.html" target="_blank">политику конфиденциальности</a> и <a href="/contract-offer.html" target="_blank">пользовательское соглашение (оферту)</a></p>
+				<div class="popup-copy__wrap js-checkbox">
+					<div class="popup-copy__check">
+						<input type="checkbox" name="checkCard">
+					</div>
+					<p class="popup-copy">Согласен с&nbsp;условиями <a href="/politics.html" target="_blank">политики
+							конфиденциальности</a>, <a href="/contract-offer.html" target="_blank">пользовательским
+							соглашением (офертой)</a> и <a href="/podpiska.html" target="_blank">соглашением с
+							подпиской</a></p>
+				</div>
 			</form>
 		</div>
 	</main>

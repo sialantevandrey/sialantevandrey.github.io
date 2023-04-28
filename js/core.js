@@ -17,6 +17,8 @@ $(document).ready(function() {
 	  }
 	$(".submit-form").submit(function(e) {
 		e.preventDefault();
+		let phoneUser = $(this).find('input[name=phone]').val().replace(/[^\d]/g, '');
+		let phoneValid = false;
 		let mailForm = $(this).find('.email-valid').val();
 		var element = document.querySelector('input[name=checkCard]');  
 		var checkStatus = false;
@@ -31,18 +33,23 @@ $(document).ready(function() {
 		} else {
 			checkStatus = true;
 		}
-		if(isEmail(mailForm) && checkStatus) {
+		if(phoneUser.length == 11) {
+			phoneValid = true;
+		} else {
+			phoneValid = false;
+			$(this).find('.phone-error').fadeIn();
+		}
+		if(isEmail(mailForm) && phoneValid && checkStatus) {
+			var phoneError = $(this).find('.phone-error');
 			var mailError = $(this).find('.email-error');
-			mailError.hide();
+			$('.form-error').hide();
 			var form_email = $(this).find('input[type="email"]').val();
 			var form_data = $(this).serialize(); //собераем все данные из формы
 			var saveLink = $(this).data('save');
 			var pageLink = $(this).data('link');
 			var pageCode = $(this).data('code');
 			var pageType = $(this).data('type');
-			if(pageType == 'card') {
 
-			}
 			mailProcessing();
 			if($(this).data('save')) {
 				// window.open(saveLink, '_blank');
@@ -52,6 +59,7 @@ $(document).ready(function() {
 				email: form_email,
 				referral_code: lastSegment,
 				payment_type: pageType,
+				phone: phoneUser,
 			}
 			myJson = JSON.stringify(jj);
 			$.ajax({
@@ -76,6 +84,7 @@ $(document).ready(function() {
 					let dataResult = JSON.stringify(data);
 						dataResult = JSON.parse(dataResult);
 					let mailTextError = dataResult.responseJSON.errors.email;
+					let phoneTextError = dataResult.responseJSON.errors.phone;
 					let refTextError = dataResult.responseJSON.errors.referral_code;
 					let swalClose = false;
 					if(dataResult.status == 400) {
@@ -83,20 +92,23 @@ $(document).ready(function() {
 							mailError.html(mailTextError).fadeIn();
 							swal.close();
 						}
+						if(phoneTextError) {
+							phoneError.html(phoneTextError).fadeIn();
+							swal.close();
+						}
 						if(refTextError) {
 							swal({
 								title: 'Проблемы с вашим реферальным кодом',
 								text: refTextError,
 								icon: 'error',
+								confirmButtonText: 'Ок',
 							});
-						}
-						if(swalClose) {
-							
 						}
 					} else {
 						swal({
 							title: 'Что-то пошло не так повторите',
 							icon: 'error',
+							confirmButtonText: 'Ок',
 						});
 					}
 				}
@@ -146,7 +158,6 @@ let mailProcessing = () => {
 		buttons: false,
 	});
 }
-
 // Заявка отправляется
 let mailSubmit = (pageLink) => { 
 	if(pageLink) {

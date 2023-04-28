@@ -196,6 +196,7 @@
 }
 .popup-label {
 	display: block;
+	margin-bottom: 15px;
 	p {
 		font-weight: 500;
 		font-size: 16px;
@@ -250,14 +251,17 @@
 		margin-top: 20px;
 	}
 }
-.email-error {
+.form-error {
 	display: none;
 	font-size: 14px;
 	margin-top: 10px;
 	color: red;
 }
+.email-error {
+	
+}
 .swal-title {
-	padding: 13px 19px 60px !important;
+	padding: 13px 19px !important;
 }
 .swal-button-container {
 	margin: 5px auto;
@@ -328,4 +332,10 @@
 	.popup-copy__check {
 		background: red;
 	}
+}
+.swal-overlay--show-modal .swal-modal {
+	padding-bottom: 30px !important;
+}
+.swal-footer {
+	padding-bottom: 0 !important;
 }
