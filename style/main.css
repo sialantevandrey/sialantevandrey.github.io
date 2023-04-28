@@ -1838,8 +1838,6 @@ label {
       width: 250px;
       height: 490px;
       -webkit-border-radius: 42px;
-      -moz-border-radius: 42px;
-      -ms-border-radius: 42px;
       border-radius: 42px;
       left: 4px; } }
   @media only screen and (max-width: 720px) {
@@ -1847,7 +1845,9 @@ label {
       width: 209px;
       height: 406px;
       left: 1px;
-      top: 9px; } }
+      top: 9px;
+    -webkit-border-radius: 100px;
+          border-radius: 100px;} }
 
 .best-phone__photo {
   width: 100%;
