@@ -47,13 +47,6 @@ $(window).scroll(function(){
     if(scrollTracking($(".earn-phone-json-pc"))) {
       animationJson(document.querySelector(".earn-phone-json-pc"), '/json/earn-phone-pc.json', true);
     }
-    if(scrollTracking($(".communicate-json"))) {
-      if(windowWidth > mobFrame) {
-        animationJson(document.querySelector(".communicate-json"), '/json/communicate-pc.json', true);
-      } else {
-        animationJson(document.querySelector(".communicate-json"), '/json/communicate-mob.json', true);
-      }
-    } 
 });
 $(document).ready(function(){ 
     if(windowWidth > mobFrame && scrollTracking($(".maneo-json-pc"))) {
@@ -69,13 +62,6 @@ $(document).ready(function(){
     if(scrollTracking($(".earn-phone-json-pc"))) {
       animationJson(document.querySelector(".earn-phone-json-pc"), '/json/earn-phone-pc.json', true);
     }
-    if(scrollTracking($(".communicate-json"))) {
-      if(windowWidth > mobFrame) {
-        animationJson(document.querySelector(".communicate-json"), '/json/communicate-pc.json', true);
-      } else {
-        animationJson(document.querySelector(".communicate-json"), '/json/communicate-mob.json', true);
-      }
-    } 
 });
 
 
