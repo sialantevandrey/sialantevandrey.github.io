@@ -138,6 +138,10 @@
     position: absolute;
     left: 17px;
     top: 13px;
+    svg {
+        border-radius: inherit;
+        overflow: hidden;
+    }
     @include media('max', 'xl') {
         width: 250px;
         height: 490px;
